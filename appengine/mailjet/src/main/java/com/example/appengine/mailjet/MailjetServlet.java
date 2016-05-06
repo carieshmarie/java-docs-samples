@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+<!-- [START mailjet_imports] -->
 package com.example.appengine.mailjet;
 
 import com.mailjet.client.MailjetClient;
@@ -21,6 +22,7 @@ import com.mailjet.client.MailjetRequest;
 import com.mailjet.client.MailjetResponse;
 import com.mailjet.client.errors.MailjetException;
 import com.mailjet.client.resource.Email;
+<!-- [END mailjet_imports] -->
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -32,6 +34,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+<!-- [START app] -->
 @SuppressWarnings("serial")
 public class MailjetServlet extends HttpServlet {
   private static final String MAILJET_API_KEY = System.getenv("MAILJET_API_KEY");
@@ -65,3 +68,4 @@ public class MailjetServlet extends HttpServlet {
     }
   }
 }
+<!-- [END app] -->
