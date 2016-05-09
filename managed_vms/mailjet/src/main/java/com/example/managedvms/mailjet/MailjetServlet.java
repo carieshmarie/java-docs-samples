@@ -16,11 +16,13 @@
 
 package com.example.managedvms.mailjet;
 
+// [START mailjet_imports]
 import com.mailjet.client.MailjetClient;
 import com.mailjet.client.MailjetRequest;
 import com.mailjet.client.MailjetResponse;
 import com.mailjet.client.errors.MailjetException;
 import com.mailjet.client.resource.Email;
+// [END mailjet_imports]
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -33,6 +35,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+// [START app]
 @SuppressWarnings("serial")
 @WebServlet(name = "mailjet", value = "/send/email")
 public class MailjetServlet extends HttpServlet {
@@ -67,3 +70,4 @@ public class MailjetServlet extends HttpServlet {
     }
   }
 }
+// [END app]
